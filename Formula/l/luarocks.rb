@@ -4,6 +4,7 @@ class Luarocks < Formula
   url "https://luarocks.org/releases/luarocks-3.12.2.tar.gz"
   sha256 "b0e0c85205841ddd7be485f53d6125766d18a81d226588d2366931e9a1484492"
   license "MIT"
+  revision 1
   head "https://github.com/luarocks/luarocks.git", branch: "master"
 
   livecheck do
