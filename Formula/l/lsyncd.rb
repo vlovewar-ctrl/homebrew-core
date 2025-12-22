@@ -4,6 +4,7 @@ class Lsyncd < Formula
   url "https://github.com/lsyncd/lsyncd/archive/refs/tags/release-2.3.1.tar.gz"
   sha256 "fc19a77b2258dc6dbb16a74f023de7cd62451c26984cedbec63e20ff22bcbdd8"
   license "GPL-2.0-or-later"
+  revision 1
 
   no_autobump! because: :requires_manual_review
 
