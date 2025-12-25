@@ -4,6 +4,7 @@ class GitlabGem < Formula
   url "https://github.com/NARKOZ/gitlab/archive/refs/tags/v6.1.0.tar.gz"
   sha256 "a1a0d2885994d15ef432818bdcaf1421c98a95c364d66284d46be432e115569d"
   license "BSD-2-Clause"
+  revision 1
 
   bottle do
     rebuild 1
@@ -15,7 +16,7 @@ class GitlabGem < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "b569e5477ca4d10a8bd8b82a3b5215f5b4adbf29ff995f31309303a86918033c"
   end
 
-  depends_on "ruby"
+  depends_on "ruby@3.4"
 
   # List with `gem install --explain gitlab -v #{version}`
   # https://rubygems.org/gems/gitlab/versions/#{version}/dependencies
