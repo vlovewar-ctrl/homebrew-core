@@ -4,6 +4,7 @@ class Pgslice < Formula
   url "https://github.com/ankane/pgslice/archive/refs/tags/v0.7.1.tar.gz"
   sha256 "9c4b597c376217f81b40775906a07d1a294f22236f357bc88551b4a3a67b6172"
   license "MIT"
+  revision 1
 
   bottle do
     sha256 cellar: :any,                 arm64_tahoe:   "4b804ee8c22a1b234028f9119170e2172641c89fb39adf7c46ffcbb420aff89f"
@@ -18,7 +19,7 @@ class Pgslice < Formula
 
   depends_on "postgresql@18" => :test
   depends_on "libpq"
-  depends_on "ruby"
+  depends_on "ruby@3.4"
 
   resource "pg" do
     url "https://rubygems.org/gems/pg-1.6.0.gem"
